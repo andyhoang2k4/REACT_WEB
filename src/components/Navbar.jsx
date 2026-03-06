@@ -38,27 +38,27 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link nav-link-custom" href="#home" onClick={handleLinkClick}>
-                Home
+                Trang chủ
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link nav-link-custom" href="#models" onClick={handleLinkClick}>
-                Models
+                Mô hình
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link nav-link-custom" href="#features" onClick={handleLinkClick}>
-                Features
+                Tính năng
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link nav-link-custom" href="#showcase" onClick={handleLinkClick}>
-                Showcase
+                Trưng bày
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link nav-link-custom" href="#testimonials" onClick={handleLinkClick}>
-                Reviews
+                Đánh giá
               </a>
             </li>
           </ul>

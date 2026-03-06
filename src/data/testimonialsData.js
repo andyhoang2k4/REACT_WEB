@@ -1,31 +1,31 @@
 // Testimonials data for Testimonials component
-import avatarMan1 from '../assets/images/avatar-man1.jpg';
-import avatarWoman1 from '../assets/images/avatar-woman1.jpg';
-import avatarMan2 from '../assets/images/avatar-man2.jpg';
+import avatar1 from '../assets/images/avatar1.jpg';
+import avatar2 from '../assets/images/avatar2.jpg';
+import avatar3 from '../assets/images/avatar3.jpg';
 
 export const testimonials = [
   {
     id: 1,
-    name: 'Michael Richardson',
-    role: 'Business Executive',
-    text: 'The level of craftsmanship in my new sedan is extraordinary. Every drive feels like an occasion. The attention to detail is simply unmatched.',
-    avatar: avatarMan1,
+    name: 'Huỳnh Quốc Cường',
+    role: 'Giám đốc điều hành',
+    text: 'Mức độ tinh xảo trong chiếc sedan mới của tôi thật tuyệt vời. Mỗi chuyến đi đều cảm giác như một dịp đặc biệt. Sự chú ý đến từng chi tiết thật sự không gì sánh được.',
+    avatar: avatar1,
     rating: 5
   },
   {
     id: 2,
-    name: 'Sarah Mitchell',
-    role: 'Entrepreneur',
-    text: 'Outstanding service and an even more remarkable vehicle. The performance exceeds expectations and the luxury interior is absolutely stunning.',
-    avatar: avatarWoman1,
+    name: 'Đỗ Đại Phát',
+    role: 'Doanh nhân',
+    text: 'Dịch vụ xuất sắc và phương tiện thậm chí còn đáng kinh ngạc hơn. Hiệu suất vượt quá kỳ vọng và nội thất cao cấp thực sự ấn tượng.',
+    avatar: avatar2,
     rating: 5
   },
   {
     id: 3,
-    name: 'David Hamilton',
-    role: 'Automotive Enthusiast',
-    text: 'After owning multiple luxury vehicles, I can confidently say this is the finest automobile I have ever driven. Pure excellence in every aspect.',
-    avatar: avatarMan2,
+    name: 'Lê Hiếu',
+    role: 'Người đam mê ô tô',
+    text: 'Sau khi sở hữu nhiều xe hơi cao cấp, tôi có thể khẳng định một cách tự tin rằng đây là chiếc xe tốt nhất mà tôi từng lái. Sự hoàn hảo thuần túy trong mọi khía cạnh.',
+    avatar: avatar3,
     rating: 5
   }
 ];

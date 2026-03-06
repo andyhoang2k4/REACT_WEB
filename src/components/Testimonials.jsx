@@ -15,9 +15,9 @@ const Testimonials = () => {
       <div className="container">
         {/* Section Header */}
         <div className="text-center">
-          <h2 className="section-title">Client Reviews</h2>
+          <h2 className="section-title">Đánh giá của khách hàng</h2>
           <p className="section-subtitle mx-auto">
-            Hear from our valued customers who have experienced the excellence of LUXE MOTORS.
+            Nghe từ những khách hàng quý của chúng tôi đã trải nghiệm sự xuất sắc của LUXE MOTORS.
           </p>
         </div>
 

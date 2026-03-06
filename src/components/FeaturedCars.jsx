@@ -48,12 +48,12 @@ const FeaturedCars = () => {
 
                   {/* Price */}
                   <div className="car-card-price">
-                    <span className="currency">From</span> ${car.basePrice.toLocaleString()}
+                    <span className="currency"></span> {car.basePrice.toLocaleString()} VND
                   </div>
 
                   {/* View Details Button - mt-auto pushes button to bottom of card */}
                   <button className="btn btn-primary-custom w-100 mt-auto">
-                    View Details
+                   Xem chi tiết
                   </button>
                 </div>
               </div>

@@ -1,22 +1,22 @@
 // Footer data for Footer component
 export const footerLinks = {
   vehicles: [
-    { name: 'Sport Coupe', href: '#' },
-    { name: 'Executive Sedan', href: '#' },
-    { name: 'Luxury SUV', href: '#' },
-    { name: 'Convertible', href: '#' }
+    { name: 'Xe thể thao 2 cửa', href: '#' },
+    { name: 'Sedan hạng sang', href: '#' },
+    { name: 'Xe SUV sang trọng', href: '#' },
+    { name: 'Có thể tháo rời/Chuyển đổi', href: '#' }
   ],
   company: [
-    { name: 'About Us', href: '#' },
-    { name: 'Careers', href: '#' },
-    { name: 'Press Room', href: '#' },
-    { name: 'Investors', href: '#' }
+    { name: 'Về Chúng Tôi', href: '#' },
+    { name: 'Sự nghiệp', href: '#' },
+    { name: 'Phòng Báo Chí', href: '#' },
+    { name: 'Nhà đầu tư', href: '#' }
   ],
   support: [
-    { name: 'Contact', href: '#' },
-    { name: 'Find a Dealer', href: '#' },
-    { name: 'Service Centers', href: '#' },
-    { name: 'Warranty', href: '#' }
+    { name: 'Liên hệ', href: '#' },
+    { name: 'Tìm đại lý', href: '#' },
+    { name: 'Trung tâm Dịch vụ', href: '#' },
+    { name: 'Bảo hành', href: '#' }
   ]
 };
 
@@ -31,7 +31,7 @@ export const socialLinks = [
 export const footerInfo = {
   brandName: 'LUXE MOTORS',
   brandIcon: 'bi-car-front-fill',
-  description: 'Crafting exceptional vehicles for discerning drivers since 1985. Experience the perfect blend of luxury, performance, and innovation.',
-  newsletterText: 'Subscribe for exclusive updates and offers.',
-  copyright: '© 2025 LUXE MOTORS. All rights reserved. | Privacy Policy | Terms of Service'
+  description: 'Chế tạo những chiếc xe xuất sắc cho những tài xế khó tính từ năm 1985. Trải nghiệm sự kết hợp hoàn hảo giữa sang trọng, hiệu suất và đổi mới.',
+  newsletterText: 'Đăng ký để nhận cập nhật và ưu đãi độc quyền.',
+  copyright: '© 2025 LUXE MOTORS. Đã đăng ký bản quyền. | Chính sách bảo mật | Điều khoản dịch vụ'
 };

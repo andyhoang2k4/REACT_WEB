@@ -3,25 +3,25 @@ export const features = [
   {
     id: 1,
     icon: 'bi-gear-fill',
-    title: 'Premium Engineering',
-    description: 'Meticulously crafted engines and precision engineering deliver unmatched performance and reliability.'
+    title: 'Kỹ thuật cao cấp',
+    description: 'Các động cơ được chế tạo tỉ mỉ và kỹ thuật chính xác mang lại hiệu suất và độ tin cậy vô song.'
   },
   {
     id: 2,
     icon: 'bi-shield-fill-check',
-    title: 'Safety Technology',
-    description: 'Advanced safety systems and intelligent driver assistance features protect you on every journey.'
+    title: 'Công nghệ An toàn',
+    description: 'Hệ thống an toàn tiên tiến và tính năng hỗ trợ lái xe thông minh bảo vệ bạn trên mọi hành trình.'
   },
   {
     id: 3,
     icon: 'bi-stars',
-    title: 'Luxury Interior',
-    description: 'Handcrafted interiors with premium materials offer ultimate comfort and sophistication.'
+    title: 'Nội thất cao cấp',
+    description: 'Nội thất được chế tác thủ công với vật liệu cao cấp mang lại sự thoải mái và tinh tế tối đa.'
   },
   {
     id: 4,
     icon: 'bi-rocket-takeoff-fill',
-    title: 'High Performance',
-    description: 'Experience exhilarating acceleration and precise handling designed for driving enthusiasts.'
+    title: 'Hiệu suất cao',
+    description: 'Trải nghiệm sự tăng tốc kịch tính và khả năng điều khiển chính xác được thiết kế cho những người yêu tốc độ.'
   }
 ];

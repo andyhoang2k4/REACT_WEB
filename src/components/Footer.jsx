@@ -34,7 +34,7 @@ const Footer = () => {
 
           {/* Vehicles Column */}
           <div className="col-6 col-lg-2 mb-4 mb-lg-0">
-            <h4 className="footer-heading">Vehicles</h4>
+            <h4 className="footer-heading">Phương tiện</h4>
             {footerLinks.vehicles.map((link, index) => (
               <a key={index} href={link.href} className="footer-link">
                 {link.name}
@@ -44,7 +44,7 @@ const Footer = () => {
 
           {/* Company Column */}
           <div className="col-6 col-lg-2 mb-4 mb-lg-0">
-            <h4 className="footer-heading">Company</h4>
+            <h4 className="footer-heading">Công ty</h4>
             {footerLinks.company.map((link, index) => (
               <a key={index} href={link.href} className="footer-link">
                 {link.name}
@@ -54,7 +54,7 @@ const Footer = () => {
 
           {/* Support Column */}
           <div className="col-6 col-lg-2 mb-4 mb-lg-0">
-            <h4 className="footer-heading">Support</h4>
+            <h4 className="footer-heading">Hỗ trợ</h4>
             {footerLinks.support.map((link, index) => (
               <a key={index} href={link.href} className="footer-link">
                 {link.name}
@@ -64,7 +64,7 @@ const Footer = () => {
 
           {/* Newsletter Column */}
           <div className="col-lg-2">
-            <h4 className="footer-heading">Newsletter</h4>
+            <h4 className="footer-heading">Bản tin</h4>
             <p className="footer-description" style={{fontSize: '13px'}}>
               {footerInfo.newsletterText}
             </p>

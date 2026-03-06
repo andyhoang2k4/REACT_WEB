@@ -10,7 +10,7 @@ const Features = () => {
         <div className="text-center">
           <h2 className="section-title">Tại Sao Chọn Chúng Tôi</h2>
           <p className="section-subtitle mx-auto">
-            Every vehicle is built with passion, precision, and an unwavering commitment to excellence.
+           Mỗi phương tiện được xây dựng với niềm đam mê, sự chính xác và cam kết không ngừng với sự xuất sắc.
           </p>
         </div>
 
