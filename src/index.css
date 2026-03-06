@@ -1,0 +1,555 @@
+/* ============================================
+   LUXE MOTORS - Global Styles
+   Minimal custom CSS, Bootstrap-first approach
+   ============================================ */
+
+/* Import Bootstrap Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* Root Variables */
+:root {
+  --color-black: #000000;
+  --color-dark-gray: #1a1a1a;
+  --color-gray: #2d2d2d;
+  --color-light-gray: #f8f9fa;
+  --color-white: #ffffff;
+  --color-silver: #c0c0c0;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --font-main: 'Montserrat', sans-serif;
+  --section-padding: 80px;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-dark-gray);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   GLOBAL BUTTON STYLE (Consistent across site)
+   ============================================ */
+.btn-primary-custom {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  padding: 14px 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  padding: 14px 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  transform: translateY(-2px);
+}
+
+.btn-dark-custom {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  padding: 14px 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-dark-custom:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+/* ============================================
+   NAVBAR STYLES
+   ============================================ */
+.navbar-custom {
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--color-white) !important;
+  text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+  color: var(--color-accent) !important;
+}
+
+.nav-link-custom {
+  color: var(--color-white) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: var(--color-accent) !important;
+}
+
+/* ============================================
+   HERO STYLES
+   ============================================ */
+.hero-section {
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 58px;
+  font-weight: 800;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+/* ============================================
+   SECTION STYLES (Consistent spacing)
+   ============================================ */
+.section {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.section-bg-light {
+  background-color: var(--color-light-gray);
+}
+
+.section-bg-dark {
+  background-color: var(--color-dark-gray);
+  color: var(--color-white);
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: var(--color-black);
+}
+
+.section-title-light {
+  color: var(--color-white);
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 50px;
+  max-width: 600px;
+}
+
+.section-subtitle-light {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ============================================
+   CAR CARD STYLES
+   ============================================ */
+.car-card {
+  background: var(--color-white);
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.car-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.car-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.car-card-body {
+  padding: 25px;
+}
+
+.car-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.car-card-specs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.spec-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #666;
+}
+
+.car-card-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-black);
+  margin-bottom: 15px;
+}
+
+.car-card-price .currency {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ============================================
+   FEATURE CARD STYLES
+   ============================================ */
+.feature-card {
+  text-align: center;
+  padding: 30px 20px;
+  background: var(--color-white);
+  border-radius: 0;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 48px;
+  color: var(--color-accent);
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.feature-description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ============================================
+   SHOWCASE STYLES
+   ============================================ */
+.showcase-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.showcase-title {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.showcase-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.showcase-features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.showcase-features-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ============================================
+   TESTIMONIAL STYLES
+   ============================================ */
+.testimonial-card {
+  background: var(--color-white);
+  padding: 35px;
+  border-radius: 0;
+  border-left: 3px solid var(--color-accent);
+  height: 100%;
+}
+
+.testimonial-stars {
+  color: #ffc107;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial-avatar {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.testimonial-role {
+  font-size: 13px;
+  color: #888;
+}
+
+/* ============================================
+   CTA SECTION STYLES
+   ============================================ */
+.cta-section {
+  background: linear-gradient(135deg, var(--color-black) 0%, var(--color-gray) 100%);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.cta-text {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 60px 0 25px;
+}
+
+.footer-brand {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.footer-heading {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: var(--color-white);
+}
+
+.footer-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  color: var(--color-white);
+  padding-left: 5px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  border-radius: 0;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+  margin-top: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-subtitle {
+    font-size: 17px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .showcase-img {
+    height: 350px;
+  }
+
+  .showcase-content {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .cta-title {
+    font-size: 32px;
+  }
+
+  .showcase-img {
+    height: 280px;
+  }
+}
