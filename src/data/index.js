@@ -4,3 +4,4 @@ export { features } from './featuresData';
 export { showcaseData } from './showcaseData';
 export { testimonials } from './testimonialsData';
 export { footerLinks, socialLinks, footerInfo } from './footerData';
+export { heroCarouselImages, heroContent, carouselSettings } from './heroData';

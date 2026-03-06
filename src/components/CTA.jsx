@@ -4,16 +4,17 @@ import React from 'react';
 const CTA = () => {
   return (
     <section id="cta" className="cta-section">
-      <div className="container">
+      <div className="container text-center">
         {/* CTA Title */}
         <h2 className="cta-title">
-          Book Your Test Drive Today
+          Đặt Lịch Lái Thử Ngay Hôm Nay
         </h2>
 
         {/* CTA Description */}
         <p className="cta-text">
-          Experience the thrill of driving a LUXE MOTORS vehicle. Schedule your
-          exclusive test drive at your nearest showroom and feel the difference.
+          Trải nghiệm sự phấn khích khi lái một chiếc xe LUXE MOTORS. Đặt lịch
+          lái thử độc quyền của bạn tại showroom gần nhất và cảm nhận sự khác
+          biệt.
         </p>
 
         {/* CTA Button */}
@@ -25,7 +26,7 @@ const CTA = () => {
             color: 'var(--color-black)'
           }}
         >
-          Schedule Now
+          Lên lịch ngay
         </a>
       </div>
     </section>

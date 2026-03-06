@@ -8,9 +8,9 @@ const FeaturedCars = () => {
       <div className="container">
         {/* Section Header */}
         <div className="text-center">
-          <h2 className="section-title">Our Models</h2>
+          <h2 className="section-title">Các mô hình của chúng tôi</h2>
           <p className="section-subtitle mx-auto">
-            Explore our exclusive collection of premium vehicles crafted for perfection.
+            Khám phá bộ sưu tập độc quyền các phương tiện cao cấp của chúng tôi được chế tác hoàn hảo.
           </p>
         </div>
 
@@ -18,8 +18,8 @@ const FeaturedCars = () => {
         <div className="row g-4">
           {carModels.map((car) => (
             <div className="col-12 col-md-6 col-lg-3" key={car.id}>
-              {/* Car Card */}
-              <div className="card car-card">
+              {/* Car Card - h-100 ensures equal height across all cards */}
+              <div className="card car-card h-100">
                 {/* Car Image */}
                 <img
                   src={car.image}
@@ -27,9 +27,12 @@ const FeaturedCars = () => {
                   className="card-img-top car-card-img"
                 />
 
-                {/* Card Content */}
-                <div className="card-body car-card-body">
-                  <h3 className="car-card-title">{car.name}</h3>
+                {/* Card Content - d-flex flex-column enables flex layout, mt-auto on button pushes it to bottom */}
+                <div className="card-body car-card-body d-flex flex-column">
+                  {/* Title - fixed height ensures consistent alignment across all cards */}
+                  <h3 className="car-card-title" style={{ minHeight: '56px', marginBottom: '0' }}>
+                    {car.name}
+                  </h3>
 
                   {/* Specifications */}
                   <div className="car-card-specs">
@@ -48,8 +51,8 @@ const FeaturedCars = () => {
                     <span className="currency">From</span> ${car.basePrice.toLocaleString()}
                   </div>
 
-                  {/* View Details Button */}
-                  <button className="btn btn-primary-custom w-100">
+                  {/* View Details Button - mt-auto pushes button to bottom of card */}
+                  <button className="btn btn-primary-custom w-100 mt-auto">
                     View Details
                   </button>
                 </div>

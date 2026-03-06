@@ -26,19 +26,19 @@ const Testimonials = () => {
           {testimonials.map((testimonial) => (
             <div className="col-12 col-md-6 col-lg-4" key={testimonial.id}>
               {/* Testimonial Card */}
-              <div className="testimonial-card">
+              <div className="testimonial-card h-100 d-flex flex-column">
                 {/* Star Rating */}
                 <div className="testimonial-stars">
                   {renderStars(testimonial.rating)}
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="testimonial-text">
+                <p className="testimonial-text flex-grow-1">
                   "{testimonial.text}"
                 </p>
 
                 {/* Author Information */}
-                <div className="testimonial-author">
+                <div className="testimonial-author mt-auto">
                   <img
                     src={testimonial.avatar}
                     alt={testimonial.name}

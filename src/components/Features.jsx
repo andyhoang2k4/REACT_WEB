@@ -8,7 +8,7 @@ const Features = () => {
       <div className="container">
         {/* Section Header */}
         <div className="text-center">
-          <h2 className="section-title">Why Choose Us</h2>
+          <h2 className="section-title">Tại Sao Chọn Chúng Tôi</h2>
           <p className="section-subtitle mx-auto">
             Every vehicle is built with passion, precision, and an unwavering commitment to excellence.
           </p>
@@ -19,17 +19,19 @@ const Features = () => {
           {features.map((feature) => (
             <div className="col-12 col-md-6 col-lg-3" key={feature.id}>
               {/* Feature Card */}
-              <div className="feature-card">
+              <div className="feature-card h-100 d-flex flex-column">
                 {/* Feature Icon */}
                 <div className="feature-icon">
                   <i className={`bi ${feature.icon}`}></i>
                 </div>
 
-                {/* Feature Title */}
-                <h3 className="feature-title">{feature.title}</h3>
+                {/* Feature Title - fixed height for consistent alignment */}
+                <h3 className="feature-title" style={{ minHeight: '60px', marginBottom: '0' }}>
+                  {feature.title}
+                </h3>
 
                 {/* Feature Description */}
-                <p className="feature-description">
+                <p className="feature-description flex-grow-1">
                   {feature.description}
                 </p>
               </div>
