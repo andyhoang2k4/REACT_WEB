@@ -1,6 +1,3 @@
-// CTA Component - Call to action section for test drive booking
-import React from 'react';
-
 const CTA = () => {
   return (
     <section id="cta" className="cta-section">

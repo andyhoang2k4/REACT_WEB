@@ -1,11 +1,12 @@
 // Testimonials Component - 3 customer testimonials
 import React from 'react';
 import { testimonials } from '../data/testimonialsData';
+import starIcon from '../assets/icons/star-fill.svg';
 
 // Helper function to render star rating
 const renderStars = (rating) => {
   return Array(rating).fill('').map((_, index) => (
-    <i key={index} className="bi bi-star-fill"></i>
+    <img key={index} src={starIcon} alt="" className="star-icon" />
   ));
 };
 

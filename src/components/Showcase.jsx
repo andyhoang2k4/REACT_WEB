@@ -1,6 +1,7 @@
 // Showcase Component - Split layout with image and description
 import React from 'react';
 import { showcaseData } from '../data/showcaseData';
+import checkIcon from '../assets/icons/check-circle-fill.svg';
 
 const Showcase = () => {
   return (
@@ -33,7 +34,7 @@ const Showcase = () => {
               <ul className="showcase-features-list">
                 {showcaseData.features.map((feature, index) => (
                   <li key={index}>
-                    <i className="bi bi-check-circle-fill text-primary me-2"></i>
+                    <img src={checkIcon} alt="" className="feature-icon" />
                     {feature}
                   </li>
                 ))}

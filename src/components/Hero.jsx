@@ -9,7 +9,7 @@ const Hero = () => {
       <div
         id="heroCarousel"
         className="carousel slide carousel-fade"
-        data-bs-ride={carouselSettings.ride}
+        // data-bs-ride={carouselSettings.ride}
         data-bs-interval={carouselSettings.interval}
       >
         {/* Carousel Indicators */}

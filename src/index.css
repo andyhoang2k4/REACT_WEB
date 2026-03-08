@@ -4,7 +4,7 @@
    ============================================ */
 
 /* Import Bootstrap Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 /* Root Variables */
 :root {
@@ -16,7 +16,7 @@
   --color-silver: #c0c0c0;
   --color-accent: #2563eb;
   --color-accent-hover: #1d4ed8;
-  --font-main: 'Montserrat', sans-serif;
+  --font-main: "Montserrat", sans-serif;
   --section-padding: 80px;
 }
 
@@ -98,25 +98,52 @@ body {
    ============================================ */
 .navbar-custom {
   background-color: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(10px);
   padding: 15px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
 }
 
-.navbar-brand {
+.navbar-custom .container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-custom .navbar-brand {
   font-size: 24px;
   font-weight: 800;
+  display: flex;
+  align-items: center;
   letter-spacing: 3px;
-  color: var(--color-white) !important;
+  color: var(--color-white);
   text-transform: uppercase;
 }
 
-.navbar-brand:hover {
-  color: var(--color-accent) !important;
+.navbar-custom .navbar-brand:hover {
+  color: var(--color-accent);
 }
 
-.nav-link-custom {
-  color: var(--color-white) !important;
+/* Brand Logo Icon */
+.brand-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.navbar-custom .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.navbar-custom .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-custom .nav-link-custom {
+  color: var(--color-white);
   font-weight: 600;
   text-transform: uppercase;
   font-size: 13px;
@@ -125,8 +152,8 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-link-custom:hover {
-  color: var(--color-accent) !important;
+.navbar-custom .nav-link-custom:hover {
+  color: var(--color-accent);
 }
 
 /* ============================================
@@ -167,13 +194,20 @@ body {
 }
 
 .hero-overlay {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 100%);
-  z-index: 2;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  z-index: 2; */
+  position: absolute;
+  top: 0;left: 0;z-index: 2;
+  width: 100%;height: 100%;background: linear-gradient(to right,rgba(0,0,0,0.85),rgba(0,0,0,0.4));
 }
 
 .hero-content {
@@ -254,7 +288,9 @@ body {
   border: none;
   border-radius: 0;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   height: 100%;
 }
 
@@ -445,7 +481,11 @@ body {
    CTA SECTION STYLES
    ============================================ */
 .cta-section {
-  background: linear-gradient(135deg, var(--color-black) 0%, var(--color-gray) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-black) 0%,
+    var(--color-gray) 100%
+  );
   padding: 100px 0;
   text-align: center;
 }
@@ -540,47 +580,4 @@ body {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
-}
-
-/* ============================================
-   RESPONSIVE STYLES
-   ============================================ */
-@media (max-width: 991px) {
-  .hero-title {
-    font-size: 42px;
-  }
-
-  .hero-subtitle {
-    font-size: 17px;
-  }
-
-  .section-title {
-    font-size: 32px;
-  }
-
-  .showcase-img {
-    height: 350px;
-  }
-
-  .showcase-content {
-    padding: 30px 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero-title {
-    font-size: 36px;
-  }
-
-  .section-title {
-    font-size: 28px;
-  }
-
-  .cta-title {
-    font-size: 32px;
-  }
-
-  .showcase-img {
-    height: 280px;
-  }
 }

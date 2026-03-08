@@ -1,6 +1,8 @@
 // FeaturedCars Component - Display 4 car models in grid layout
 import React from 'react';
 import { carModels } from '../data/carsData';
+import speedIcon from '../assets/icons/speedometer.svg';
+import lightningIcon from '../assets/icons/lightning.svg';
 
 const FeaturedCars = () => {
   return (
@@ -37,11 +39,11 @@ const FeaturedCars = () => {
                   {/* Specifications */}
                   <div className="car-card-specs">
                     <span className="spec-item">
-                      <i className="bi bi-speedometer2"></i>
+                      <img src={speedIcon} alt="" className="spec-icon" />
                       {car.horsepower}
                     </span>
                     <span className="spec-item">
-                      <i className="bi bi-lightning"></i>
+                      <img src={lightningIcon} alt="" className="spec-icon" />
                       {car.acceleration}
                     </span>
                   </div>
